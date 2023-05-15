@@ -1,11 +1,10 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Pause : MonoBehaviour
 {
-    //[SerializeField] CameraController cameraController;
-
     public void PauseGame ()
     {
         Time.timeScale = 0;
@@ -14,5 +13,10 @@ public class Pause : MonoBehaviour
     {
         Time.timeScale = 1;
        
+    }
+
+    public void Menu()
+    {
+        SceneManager.LoadScene("Main Menu");
     }
 }
