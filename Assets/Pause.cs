@@ -19,4 +19,10 @@ public class Pause : MonoBehaviour
     {
         SceneManager.LoadScene("Main Menu");
     }
+
+    public void Restart()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        Time.timeScale = 1;
+    }
 }
